@@ -1,4 +1,6 @@
-
+---
+import { ContainerTextFlip } from "@/components/ui/container-text-flip";
+---
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -6,14 +8,16 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>DYVRGENT</title>
-		<stylesheet rel="stylesheet" href="/src/styles/global.css" />
+		<title>banyn: Intelligent Homes</title>
+		<link rel="stylesheet" href="/src/styles/global.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/pages/styles/global.css">
 	</head>
 	<body>
-		<h1>Dyvergent</h1>
+		<h1>banyn</h1>
+		<h2>Making your</h2> 
+			<ContainerTextFlip client:load /> 
+		<h2>smarter</h2>
 	</body>
 </html>
