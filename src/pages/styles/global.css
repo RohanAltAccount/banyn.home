@@ -27,4 +27,13 @@ h2 {
     justify-content: center;
 }
 
+.container-text-flip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
 
