@@ -1,6 +1,6 @@
 ---
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
-import "../styles/global.css";
+import "src/pages/styles/global.css";
 import "@fontsource/dm-sans";
 ---
 <html lang="en">
@@ -15,12 +15,15 @@ import "@fontsource/dm-sans";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		<h1>banyn</h1>
-		<h2>Making your</h2> 
-		<div class="flex min-h-screen items-center justify-center">
-			<ContainerTextFlip client:load /> 
-		</div>
-		<h2>smarter</h2>
+		<body>
+		<main class="hero">
+			<h1>banyn</h1>
+
+			<div class="tagline">
+				<p>Making your</p>
+				<ContainerTextFlip client:load />
+				<p>&nbsp;smarter</p>
+			</div>
+		</main>
 	</body>
 </html>

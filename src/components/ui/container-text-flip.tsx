@@ -39,7 +39,7 @@ export function ContainerTextFlip({
 
   const updateWidthForWord = () => {
    if (textRef.current) {
-  const textWidth = textRef.current.scrollWidth + 30;
+  const textWidth = textRef.current.scrollWidth; // bruh why did the component have 30px of extra padding on right making me mad at react smh
   setWidth(textWidth);
     }
   
