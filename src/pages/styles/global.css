@@ -1,5 +1,9 @@
-body {
+:root {
+    --page-scale: 1.3;
+}
 
+body {
+  zoom: var(--page-scale);
 	font-family: "DM Sans", sans-serif;
 }
 
@@ -48,6 +52,7 @@ h1:hover {
   height: auto;
   width: auto;
   font-size: 19px;
+  filter: invert(0%);
   transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
@@ -78,7 +83,7 @@ h1:hover {
   padding-bottom: 30px;
 	position: fixed;
 	top: 15px;
-  	right: 30px;
+  right: 250px;
 	bottom: 30px;
 	z-index: 999;
   transition: all 0.2s ease-in-out;
