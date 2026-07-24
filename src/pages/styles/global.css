@@ -103,3 +103,15 @@ h1:hover {
     background-color: #fff;
   outline: #252525 solid 1px;
 }
+
+
+.switch-platform-btn {
+border: none;
+background-color: transparent;
+color: #9d9d9d;
+transition: all 0.2s ease-in-out;
+}
+.switch-platform-btn:hover {
+  color: #000000;
+  cursor: pointer;
+}

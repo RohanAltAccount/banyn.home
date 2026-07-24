@@ -2,6 +2,7 @@
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 import "src/pages/styles/global.css";
 import "@fontsource/dm-sans";
+
 ---
 <html lang="en">
 	<head>
@@ -14,6 +15,7 @@ import "@fontsource/dm-sans";
 		<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/c8c8602a7e.js" crossorigin="anonymous"></script>
 	</head>
 		<body>
 		<main class="hero">
@@ -27,7 +29,16 @@ import "@fontsource/dm-sans";
 				<a href="https://www.apple.com/app-store/" class="macosbtn" aria-label="Download on the Mac App Store">
 				<span>&#63743;</span> &nbsp available on iOS</a>
 			</div>
-		</main>
+			<div class="button-container">
+			<button 
+				id="platform-switch-btn" 
+				class="switch-platform-btn" 
+				aria-label="Switch Platform">
+				<i class="fa-solid fa-2xs fa-arrow-right-arrow-left fa-rotate-270"></i>
+				<span id="btn-text">&ensp;&ensp;switch platform</span>
+			</button>
+			</div>
+	</main>
 
 	</body>
 </html>
