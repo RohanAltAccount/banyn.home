@@ -20,7 +20,29 @@ import "src/pages/styles/global.css";
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/c8c8602a7e.js" crossorigin="anonymous"></script>
 	</head>
+		<script>
+			const hero = document.querySelector(".hero");
+			const video = document.querySelector(".video-container");
+			document.addEventListener("mousemove", (event) => {
+				const x = event.clientX / window.innerWidth - 0.5;
+				const y = event.clientY / window.innerHeight - 0.5;
+
+				hero.style.transform = `translate(${x * 20}px, ${y * 20}px)`;
+				video.style.transform = `scale(1.12) translate(${x * -12}px, ${y * -12}px)`; 
+				});
+
+			document.addEventListener("mouseleave", () => {
+				hero.style.transform = "translate(0, 0)";
+				video.style.transform = "scale(1.08) translate(0, 0)";
+			});
+		</script>
 		<body>
+		<div class="video-container">
+		<video autoplay muted loop playsinline class="background-video">
+			<source src="https://upvvtoqxnqklcdwhzmwz.supabase.co/storage/v1/object/sign/video/footageSite.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZTljZjViMS1iMzg2LTRkYWUtYmQ3MS01ZjAxODA1MTY3NWQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJ2aWRlby9mb290YWdlU2l0ZS5tcDQiLCJzY29wZSI6ImRvd25sb2FkIiwiaWF0IjoxNzg0OTk3Nzk0LCJleHAiOjM4ODQ1OTE5MjU3OTR9.PnM88OebQGJjRUedPIwy0Iof4Cbt_HC6QLWhTyT9fyA" type="video/mp4">
+			Your browser does not support the video tag.
+		  </video>
+</div>
 		<main class="hero">
 			<h1>banyn</h1>
 			<div class="tagline">
