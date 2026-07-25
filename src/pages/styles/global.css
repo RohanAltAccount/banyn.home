@@ -1,10 +1,10 @@
 :root {
-    --page-scale: 1;
+
     filter: blur(0px);
 }
 
 body {
-  zoom: var(--page-scale);
+
 	font-family: "DM Sans", sans-serif;
 }
 
@@ -54,9 +54,11 @@ body:has(.macosbtn:hover) .switch-platform-btn {
 }
 .macosbtn {
   position: fixed;
-  left: 50%;
-  bottom: 55px;
-  transform: translateX(-50%);
+  bottom: 220px;
+  left: 0; 
+  right: 0; 
+  margin-inline: auto;
+  width: fit-content;
 
   display: inline-block;
   padding: 15px 20px 12px;
@@ -70,7 +72,7 @@ body:has(.macosbtn:hover) .switch-platform-btn {
   transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 .macosbtn:hover {
-  transform: translateX(-50%) translateY(-6px);
+  transform: translate(0, -6px);
   filter: invert(100%);
 }
 
